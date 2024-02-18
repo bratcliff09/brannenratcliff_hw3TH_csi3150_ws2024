@@ -1,0 +1,454 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif, Arial, Helvetica, sans-serif;
+  --font-color-primary: #f0c32a;
+  --font-color-secondary: #fff;
+  --circle-bg: #000;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+.cta {
+  color: #000;
+  border: var(--font-color-primary);
+  background: var(--font-color-primary);
+  width: 152px;
+  height: 41px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta:hover {
+  background: transparent;
+  color: var(--font-color-primary);
+  border: 1px solid var(--font-color-primary);
+}
+
+span.material-symbols-rounded {
+  font-size: 8.4rem;
+  color: var(--font-color-primary);
+}
+
+a.material-symbols-rounded {
+  color: var(--font-color-primary);
+  font-size: 8.4rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s ease
+}
+a.material-symbols-rounded:hover {
+  color: var(--font-color-secondary);
+}
+
+
+/*--------------------------------*/
+
+header {
+  height: 760px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/img/mountain6.jpg");
+  background-size: cover;
+}
+
+header img {
+  display: none;
+}
+
+header .header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  padding-top: 10%;
+}
+
+header .header-text h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--font-color-secondary);
+}
+
+header .header-text #top {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+header .header-text h1 {
+  font-weight: 400;
+  font-size: 8rem;
+  margin-bottom: 4px;
+  color: var(--font-color-primary);
+}
+
+header .header-text #tour {
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+/*first sec-------------------------*/
+
+.first-sec {
+  height: 530px;
+}
+
+.first-sec img {
+  height: inherit;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  filter: brightness(40%);
+}
+
+.first-sec .text-part {
+  position: absolute;
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5% 8%;
+  transform: translateY(-100%);
+}
+
+.first-sec .text-part .left-side {
+  width: 50%;
+  padding-right: 145px;
+}
+
+.first-sec .text-part .left-side h1 {
+  font-size: 61px;
+  color: var(--font-color-primary);
+}
+
+.first-sec .text-part .right-side {
+  width: 50%;
+}
+
+.first-sec .text-part .right-side p {
+  margin-bottom: 20px;
+  color: var(--font-color-secondary);
+}
+
+/*second sec-------------------------------------*/
+
+.second-sec {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/img/mountain4.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 730px;
+  height: fit-content;
+}
+
+.second-sec h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 500;
+  line-height: 106%;
+  margin: 6% 0 5%;
+  color: var(--font-color-primary);
+}
+
+.second-sec h1 span {
+  display: block;
+}
+
+.second-sec .second-info {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  width: 100%;
+  justify-content: center;
+  margin: 0 5%;
+}
+
+.sight {
+  width: 364px;
+  height: 450px;
+}
+
+.sight img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  position: relative;
+  filter: brightness(80%);
+}
+
+.sight .sight-text {
+  position: absolute;
+  transform: translateY(-100%);
+  width: inherit;
+  contain: content;
+}
+
+.sight .sight-text h3 {
+  font-size: 23px;
+  margin-left: 22px;
+  color: var(--font-color-secondary);
+  font-weight: 400;
+  margin-bottom: -2px;
+}
+
+.sight .sight-text a.material-symbols-rounded {
+  font-size: 5rem;
+}
+
+.second-sec button {
+  margin: 4% 0;
+  color: var(--font-color-secondary);
+}
+
+/*Third sec-------------------------------*/
+
+.third-sec {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/img/mountain3.jpg");
+  background-size: cover;
+  height: 680px;
+}
+
+.third-sec .third-info {
+  display: flex;
+  flex-direction: row;
+  padding: 5% 5%;
+  margin: 0% 2%;
+  gap: 70px;
+}
+
+.third-sec .third-info .left-side {
+  width: 50%;
+  font-size: 2.8rem;
+}
+
+.third-sec .third-info .left-side h1 {
+  font-weight: 500;
+  color: var(--font-color-primary);
+}
+
+.third-sec .third-info .right-side {
+  width: 50%;
+}
+
+.third-sec .third-info .right-side h2 {
+  margin: 20px 0;
+  color: var(--font-color-secondary);
+}
+
+.third-sec .third-info .right-side p {
+  color: var(--font-color-secondary);
+}
+
+/*Fourth sec------------------------------*/
+
+.fourth-sec {
+  height: 495px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/img/mountain5.jpg");
+  background-size: cover;
+}
+
+.fourth-sec ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  list-style: none;
+  gap: 6%;
+}
+
+.fourth-sec .circle {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background: var(--circle-bg);
+  border-radius: 50%;
+  /* padding: 20px; */
+  --square: 194px;
+  height: var(--square);
+  width: var(--square);
+}
+
+.fourth-sec .circle h3 {
+  font-size: 3.4rem;
+  font-weight: 400;
+  margin-bottom: 17px;
+  margin-top: 17%;
+  color: var(--font-color-primary);
+}
+
+.fourth-sec .circle p {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  color: var(--font-color-secondary);
+}
+
+/*Fifth sec----------------------------------------*/
+
+.fifth-sec {
+  height: 610px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/img/mountain2.jpg");
+  background-size: cover;
+  background-position-y: 40%;
+}
+
+.fifth-sec .fifth-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+
+.fifth-sec .fifth-info img {
+  --square: 200px;
+  height: var(--square);
+  width: var(--square);
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 3%;
+  filter: grayscale(100%);
+}
+
+.fifth-sec .fifth-info p {
+  text-align: center;
+  margin: 0 29% 1%;
+  color: var(--font-color-secondary);
+}
+
+.fifth-sec .fifth-info h2 {
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-bottom: -1%;
+  color: var(--font-color-secondary);
+}
+
+.fifth-sec .fifth-info span {
+  margin-bottom: -3%;
+}
+
+/*sixth sec---------------------------------------*/
+
+.sixth-sec {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.sixth-sec img {
+  width: 25%;
+  height: inherit;
+  object-fit: cover;
+  border: none;
+}
+
+/*footer-------------------------------------------------*/
+
+footer {
+  height: 86vh;
+  background: #4c495c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /*
+  align-items: center;
+  */
+  padding: 7% 7%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/img/glacier.jpg");
+  background-size: cover;
+}
+
+footer .left-side,
+footer .right-side {
+  width: 50%;
+}
+
+footer .left-side h1 {
+  font-weight: 400;
+  font-size: 4.5rem;
+  margin-bottom: 3%;
+  color: var(--font-color-primary);
+}
+
+footer .left-side p {
+  color: var(--font-color-secondary);
+}
+
+footer .left-side .socials {
+  margin-top: 8%;
+}
+
+footer .left-side .socials a {
+  text-decoration: none;
+  color: var(--font-color-primary);
+  transition: color 0.3s ease;
+}
+
+footer .left-side .socials a:hover {
+  color: var(--font-color-secondary);
+}
+
+footer .left-side .socials a i {
+  font-size: 2rem;
+}
+
+footer .right-side {
+  padding-left: 5%;
+}
+
+footer .right-side form {
+  margin-bottom: 3%;
+}
+
+footer .right-side form:first-child {
+  margin-top: 4%;
+}
+
+footer .right-side form input {
+  color: var(--font-color-secondary);
+  background: transparent;
+  border: 2px solid var(--font-color-secondary);
+  padding: 13px;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  text-align: left;
+}
+
+footer .right-side form textarea {
+  height: 130px;
+  color: var(--font-color-secondary);
+  background: transparent;
+  border: 2px solid var(--font-color-secondary);
+  padding: 13px;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  resize: vertical;
+}
+
+footer .right-side .cta {
+  width: 126px;
+}
